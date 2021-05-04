@@ -1,6 +1,6 @@
-# Project Title
+# Servicebot
 
-"tItle" uses artificial intelligence to provide users with different types of community service opportunities that suits their best interest based on their personalities. 
+"Servicebot" uses artificial intelligence to provide users with different types of community service opportunities that suits their best interest based on their personalities. 
 
 ## Getting Started
 
