@@ -1,0 +1,71 @@
+{% extends "layout.html" %}
+
+{% block page_title %}{% endblock %}
+
+{% block body %}
+    {{ super() }}
+
+    <!-- Banner -->
+    <section id="banner">
+        <h1>Welcome to Volunteer.AI</h1>
+        <p>AI recommends volunteer work suitable for you.</p>
+    </section>
+
+    <h4>Enter your cover letter here.  AI will recommend you a suitable volunteer activity.  </h4>
+
+    <hr>
+    
+    <h3>Your Cover Letter</h3>
+    <div class="form-group">
+      <label for="textArea" class="col-lg-3 control-label">Please write down your introduction in the form of a story.</label>
+      <br>
+      <div class="col-lg-9">
+      <form action="/result" method="POST">
+        <textarea class="form-control" name="Cover Letter:" ></textarea>
+        <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <hr>
+
+    <!-- One -->
+    <section id="one" class="wrapper">
+        <div class="inner">
+            <div class="flex flex-3">
+                <article>
+                    <header>
+                        <h3>Volunteer.AI How does AI work?</h3>
+                    </header>
+                    <p>The function to analyze the applicant's resume and recommend what volunteer activities are most appropriate is applied.</p>
+                    <footer>
+                        <a href="#" class="button special">More</a>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Start Analysis</h3>
+                    </header>
+                    <p>Enter your cover letter.</p>
+                    <footer>
+                        <a href="#" class="button special">More</a>
+                    </footer>
+                </article>
+                <article>
+                    <header>
+                        <h3>Viewing Analysis Results</h3>
+                    </header>
+                    <p>Using natural language processing technology, you can analyze your resume and identify appropriate volunteer activities by using volunteer activity recommendation algorithms.</p>
+                    <footer>
+                        <a href="#" class="button special">More</a>
+                    </footer>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <p>We referred to the data on the following site for personality type analysis<a href="https://www.collegeessayguy.com/">16personalities</a>.</p>
+    <p>For more information about AI, you can visit to <a href="https://tensorflow.org">Tensorflow</a>.</p>
+{% endblock %}
